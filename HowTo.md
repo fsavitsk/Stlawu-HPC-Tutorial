@@ -6,7 +6,7 @@
 
 Example bash script file
 ```bash
-#~/bin/bash
+#!/bin/bash
 module load cuda/10.2
 module load python3/anaconda3
 python mnist.py
