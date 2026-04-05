@@ -1,0 +1,25 @@
+name: Publish Docs
+on:
+  push:
+    branches:
+      - main  # or 'master' depending on your default branch name
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Configure Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+
+      - name: Install Dependencies
+        run: pip install mkdocs-material
+
+      - name: Build and Deploy
+        run: mkdocs gh-deploy --force
