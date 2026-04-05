@@ -10,5 +10,5 @@ theme:
 
 nav:
   - Home: index.md
-  - Environment: setup.md
+  - Environment: howto.md
   - Running Jobs: slurm-jobs.md
