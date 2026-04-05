@@ -1,0 +1,14 @@
+site_name: My School HPC Guide
+theme:
+  name: material
+  palette: 
+    primary: indigo  # You can change this to your school colors
+    accent: indigo
+  features:
+    - navigation.tabs # Top horizontal tabs
+    - search.share    # Built-in search bar
+
+nav:
+  - Home: index.md
+  - Environment: setup.md
+  - Running Jobs: slurm-jobs.md
