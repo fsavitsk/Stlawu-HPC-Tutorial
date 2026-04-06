@@ -19,7 +19,9 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
   features:
-    - navigation.tabs # Top horizontal tabs
+    - navigation.tabs      # Enables the top horizontal menu
+    - navigation.sections  # (Optional) Makes the left sidebar look grouped
+    - navigation.expand    # (Optional) Keeps the left menu expanded by default
     - search.share    # Built-in search bar
 
 extra_css:
@@ -27,9 +29,21 @@ extra_css:
 
 nav:
   - Home: index.md
-  - Getting Started: gettingstarted.md
-  - Resources: resources.md
-  - Software: software.md
-  - Documentation: documentation.md
-  - Tutorials: tutorials.md
+  - Getting Started:
+    - Overview: overview.md
+    - Logging in: loggingin.md
+    - Copying Files: copyingfiles.md
+  - Resources: 
+    - Cluster Info: clusterinfo.md
+    - Monitoring Software: monitoring.md
+  - Software: 
+    - Loading Modules: software.md
+    - Compiling Software: compiling.md
+    - Installed Software: installed.md
+  - Documentation: 
+    - Slurm Tutorial: slurm.md
+  - Tutorials:
+    - Tensorflow CPU: tensorcpu.md
+    - Tensorflow GPU: tensorgpu.md
+    - PyTorch: pytorch.md
   - Help: help.md
