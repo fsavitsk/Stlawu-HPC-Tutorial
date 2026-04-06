@@ -1,0 +1,10 @@
+:root > * {
+  /* Use your school's Red for the Header */
+  --md-primary-fg-color: #AA182C; 
+  
+  /* Use the Gold/Tan for interactive elements or accents */
+  --md-accent-fg-color: #D5BA8C;
+  
+  /* Optional: Use the Brown for specific text or borders */
+  --md-footer-bg-color: #653A2B;
+}
