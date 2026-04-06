@@ -18,12 +18,12 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-
-extra_css:
-  - stylesheets/extra.css
   features:
     - navigation.tabs # Top horizontal tabs
     - search.share    # Built-in search bar
+
+extra_css:
+  - stylesheets/extra.css
 
 nav:
   - Home: index.md
