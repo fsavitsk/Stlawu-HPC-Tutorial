@@ -30,20 +30,20 @@ extra_css:
 nav:
   - Home: index.md
   - Getting Started:
-    - Overview: overview.md
-    - Logging in: loggingin.md
-    - Copying Files: copyingfiles.md
+    - Overview: gettingstarted/overview.md
+    - Logging in: gettingstarted/loggingin.md
+    - Copying Files: gettingstarted/copyingfiles.md
   - Resources: 
-    - Cluster Info: clusterinfo.md
-    - Monitoring Software: monitoring.md
+    - Cluster Info: resources/clusterinfo.md
+    - Monitoring Software: resources/monitoring.md
   - Software: 
-    - Loading Modules: loading.md
-    - Compiling Software: compiling.md
-    - Installed Software: installed.md
+    - Loading Modules: software/loading.md
+    - Compiling Software: software/compiling.md
+    - Installed Software: software/installed.md
   - Documentation: 
-    - Slurm Tutorial: slurm.md
+    - Slurm Tutorial: documentation/slurm.md
   - Tutorials:
-    - Tensorflow CPU: tensorcpu.md
-    - Tensorflow GPU: tensorgpu.md
-    - PyTorch: pytorch.md
+    - Tensorflow CPU: tutorials/tensorcpu.md
+    - Tensorflow GPU: tutorials/tensorgpu.md
+    - PyTorch: tutorials/pytorch.md
   - Help: help.md
