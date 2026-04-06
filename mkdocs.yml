@@ -37,7 +37,7 @@ nav:
     - Cluster Info: clusterinfo.md
     - Monitoring Software: monitoring.md
   - Software: 
-    - Loading Modules: software.md
+    - Loading Modules: loading.md
     - Compiling Software: compiling.md
     - Installed Software: installed.md
   - Documentation: 
