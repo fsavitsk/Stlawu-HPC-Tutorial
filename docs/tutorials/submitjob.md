@@ -5,7 +5,7 @@
 Create a file named factor.py using your preffered text editor (nano/vim/vi)
 
 ```bash
-nano factor.py
+[usr@ada]$ nano factor.py
 ```
 
 Paste the following code in the file
@@ -65,6 +65,10 @@ Then exit and save your text editor.
 
 Then create a bash script called factor.run again in your preffered editor and paste this code
 ```bash
+[usr@ada]$ nano factor.run
+```
+
+```bash
 #!/bin/bash
 #SBATCH --job-name=slurm_factor       # Job name
 #SBATCH --mail-type=END,FAIL          # Mail events (NONE, BEGIN, END, FAIL, ALL)
@@ -95,11 +99,14 @@ Create a new file called factor.run
 
 You will likely need to give any bash scripts executing permission in order to run a job.
 ```bash
-chmod +x factor.run
+[usr@ada]$ chmod +x factor.run
 ```
 To run your job you will execute
 ```bash
-sbatch factor.run
+[usr@ada]$ sbatch --array=0-0 factor.run
 ```
+Note, using the array flag will run multiple copies of your job, 0-0 will run 1, 0-1 will run 2, 0-2 will run 3 and so on. If you have more jobs than available space then some will sit in the queue until space is available for them to run.
+
+If you wish to run a single job and not an array of them then small modifications are needed to the python file above so it won't crash without the array flag.
 
 Remember you can check on your job using squeue -user
