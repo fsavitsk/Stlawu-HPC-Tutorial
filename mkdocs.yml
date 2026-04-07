@@ -23,9 +23,24 @@ theme:
     - navigation.sections  # (Optional) Makes the left sidebar look grouped
     - navigation.expand    # (Optional) Keeps the left menu expanded by default
     - search.share    # Built-in search bar
+    - content.code.copy    # Adds the "Copy to Clipboard" button
+    - content.code.select  # Allows selecting the whole block with one click
 
 extra_css:
   - stylesheets/extra.css
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 nav:
   - Home: index.md
