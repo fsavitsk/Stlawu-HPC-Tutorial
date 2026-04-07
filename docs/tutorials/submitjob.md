@@ -2,7 +2,7 @@
 
 ## Example Factor.py
 
-Create a file named factor.py using your preffered text editor (nano/vim/vi)
+Create a file named factor.py using your preffered text editor (nano/vim)
 
 ```bash
 [usr@ada]$ nano factor.py
