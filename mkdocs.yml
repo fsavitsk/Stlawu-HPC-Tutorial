@@ -43,6 +43,7 @@ nav:
   - Documentation: 
     - Slurm Tutorial: documentation/slurm.md
   - Tutorials:
+    - Submitting a Job: tutorials/submitjob.md
     - Tensorflow CPU: tutorials/tensorcpu.md
     - Tensorflow GPU: tutorials/tensorgpu.md
     - PyTorch: tutorials/pytorch.md
