@@ -95,8 +95,6 @@ python ./factor.py 10000007022601232909773
 
 ```
 
-Create a new file called factor.run
-
 You will likely need to give any bash scripts executing permission in order to run a job.
 ```bash
 [usr@ada]$ chmod +x factor.run
