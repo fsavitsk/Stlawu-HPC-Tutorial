@@ -107,4 +107,4 @@ Note, using the array flag will run multiple copies of your job, 0-0 will run 1,
 
 If you wish to run a single job and not an array of them then small modifications are needed to the python file above so it won't crash without the array flag.
 
-Remember you can check on your job using squeue -user
+Remember you can check on your job using squeue.
