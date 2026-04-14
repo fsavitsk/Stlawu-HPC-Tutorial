@@ -1,6 +1,4 @@
-# Submit a Simple Job using SLURM
-
-## Example TensorFlow (GPU)
+# Example TensorFlow (GPU)
 
 Create a file named mnist_cnn.py using your preffered text editor (nano/vim)
 
