@@ -1,8 +1,8 @@
 # Submit a Simple Job using SLURM
 
-## Example Factor.py
+## Example TensorFlow (GPU)
 
-Create a file named factor.py using your preffered text editor (nano/vim)
+Create a file named mnist_cnn.py using your preffered text editor (nano/vim)
 
 ```bash
 [usr@ada ~]$ nano mnist_cnn.py
@@ -45,10 +45,10 @@ print('test_acc:', test_acc)
 
 Then exit and save your text editor.
 
-Then create a bash script called factor.run again in your preffered editor and paste this code
+Then create a bash script called mnist_job.slurm again in your preffered editor and paste this code
 
 ```bash
-[usr@ada ~]$ nano factor.run
+[usr@ada ~]$ nano mnist_job.slurm
 ```
 
 ```bash
@@ -102,8 +102,6 @@ To run your job you will execute
 ```bash
 [usr@ada]$ sbatch mnist_job.slurm
 ```
-Note, using the array flag will run multiple copies of your job, 0-0 will run 1, 0-1 will run 2, 0-2 will run 3 and so on. If you have more jobs than available space then some will sit in the queue until space is available for them to run.
-
-If you wish to run a single job and not an array of them then small modifications are needed to the python file above so it won't crash without the array flag.
+If all the GPUs are being used, then your job will sit in the queue until space is available for it to run.
 
 Remember you can check on your job using squeue.
