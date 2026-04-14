@@ -1,32 +1,13 @@
-# HPC Machine Learning Guide: TensorFlow & PyTorch
+# HPC Machine Learning Guide
 
-## 1. Environment Setup
+## TensorFlow Example Job
 
-### TensorFlow
+Create a python file for your TensorFlow code
 
-Example bash script file
 ```bash
-#!/bin/bash
-module load cuda/10.2
-module load python3/anaconda3
-python mnist.py
+[usr@ada ~]$ 
 ```
 
-## 2. Requesting Resources
-
-The cluster consists of a login node and 18 compute nodes, labelled ada01-ada18.
-
-Each Node consists of 32 CPU cores, 256GB of Memory. and 22TB of Storage.
-
-Nodes 17, 18 each have two NVIDIA Tesla V100 cards. They were released in 2018.
-
-Each card has a total of 32GB of HBM2 (High Bandwidth Memory)
-
-For tasks like machine learning or Ai, GPUs can scale much better than CPU compute for highly parralelized tasks.
-
-## 3. Example Job
-
-Barrowed from Ed Harcourt
 ```python
 """
 Chapter 2 of Deep Learning with Python, Chollet, Manning 2018
