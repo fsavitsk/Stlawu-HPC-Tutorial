@@ -51,11 +51,13 @@ Then create a bash script called mnist_job.slurm again in your preffered editor 
 [usr@ada ~]$ nano mnist_job.slurm
 ```
 
+Note: make sure to replace the email adress below.
+
 ```bash
 #!/bin/bash
 #SBATCH --job-name=slurm_gpu    # Job name
 #SBATCH --mail-type=END,FAIL          # Mail events (NONE, BEGIN, END, FAIL, ALL)
-#SBATCH --mail-user=fbsavi23@stlawu.edu     # Where to send mail	
+#SBATCH --mail-user=(email address)     # Where to send mail	
 #SBATCH --gres=gpu:1                    # Allocate 1 GPU card
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
@@ -95,8 +97,15 @@ echo ""
 To run your job you will execute
 
 ```bash
-[usr@ada]$ sbatch mnist_job.slurm
+[usr@ada ~]$ sbatch mnist_job.slurm
 ```
 If all the GPUs are being used, then your job will sit in the queue until space is available for it to run.
 
 Remember you can check on your job using squeue.
+
+Once your job is done running you may get an email.
+
+To check the output run:
+```bash
+[usr@ada ~]$ cat slurm_gpu_*.log
+```
