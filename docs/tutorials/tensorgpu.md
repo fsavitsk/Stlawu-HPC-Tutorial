@@ -92,11 +92,6 @@ date
 echo ""
 ```
 
-You will likely need to give any bash scripts executing permission in order to run a job.
-
-```bash
-[usr@ada]$ chmod +x mnist_job.slurm
-```
 To run your job you will execute
 
 ```bash
