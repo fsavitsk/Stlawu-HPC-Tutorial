@@ -8,3 +8,23 @@
   /* Optional: Use the Brown for specific text or borders */
   --md-footer-bg-color: #653A2B;
 }
+
+/* Show language name automatically in the top right */
+.highlight [class^="language-"]::before {
+  content: attr(class); /* This pulls "language-python" */
+  content: attr(class) / ""; /* Clean syntax for screen readers */
+  position: absolute;
+  right: 0.5rem;
+  top: 0.2rem;
+  font-size: 0.6rem;
+  color: var(--md-code-fg-color);
+  opacity: 0.5;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+/* Optional: Clean up the "language-" prefix so it just says "PYTHON" or "BASH" */
+.highlight .language-bash::before { content: "BASH"; }
+.highlight .language-python::before { content: "PYTHON"; }
+.highlight .language-yaml::before { content: "YAML"; }
+.highlight .language-text::before { content: "TEXT"; }
