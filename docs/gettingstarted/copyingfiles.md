@@ -15,11 +15,11 @@ Linux and macOS include SCP in the terminal by default.
 
 * **Upload a file to the cluster:**
     ```bash
-    scp /path/to/local/file.txt username@hpc.stlawu.edu:/home/username/destination/
+    scp /path/to/local/file.txt username@ada.hpc.stlawu.edu:/home/username/destination/
     ```
 * **Download a directory from the cluster:**
     ```bash
-    scp -r username@hpc.stlawu.edu:/home/username/remote_folder ./local_destination/
+    scp -r username@ada.hpc.stlawu.edu:/home/username/remote_folder ./local_destination/
     ```
     *(The `-r` flag stands for **recursive**, which is required for folders.)*
 
@@ -35,7 +35,7 @@ Linux and macOS include SCP in the terminal by default.
 ### SFTP (Secure File Transfer Protocol)
 SFTP is **interactive**. Unlike SCP, which is a one-off command, SFTP allows you to stay connected to browse and manage files.
 
-1. **Connect:** `sftp username@hpc.stlawu.edu`
+1. **Connect:** `sftp username@ada.hpc.stlawu.edu`
 2. **Upload:** `put local_file.txt`
 3. **Download:** `get remote_file.txt`
 4. **Exit:** `exit` or `bye`
@@ -45,4 +45,4 @@ SFTP is **interactive**. Unlike SCP, which is a one-off command, SFTP allows you
 
 **Example Command:**
 ```bash
-rsync -avz /local/directory/ username@hpc.stlawu.edu:/home/username/remote_directory/
+rsync -avz /local/directory/ username@ada.hpc.stlawu.edu:/home/username/remote_directory/
