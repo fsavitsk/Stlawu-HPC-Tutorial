@@ -24,7 +24,6 @@ theme:
     - navigation.expand    # (Optional) Keeps the left menu expanded by default
     - search.share    # Built-in search bar
     - content.code.copy    # Adds the "Copy to Clipboard" button
-    - content.code.select  # Allows selecting the whole block with one click
 
 extra_css:
   - stylesheets/extra.css
@@ -34,6 +33,7 @@ markdown_extensions:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
+      show_source: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences:
@@ -56,7 +56,7 @@ nav:
     - Compiling Software: software/compiling.md
     - Installed Software: software/installed.md
   - Documentation: 
-    - Slurm Tutorial: documentation/slurm.md
+    - Slurm Tutorial: documentation/documentation.md
   - Tutorials:
     - Submitting a Job: tutorials/submitjob.md
     - Tensorflow CPU: tutorials/tensorcpu.md
