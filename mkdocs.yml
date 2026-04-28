@@ -58,4 +58,5 @@ nav:
     - Tensorflow CPU: tutorials/tensorcpu.md
     - Tensorflow GPU: tutorials/tensorgpu.md
     - PyTorch: tutorials/pytorch.md
+    - R: r.md
   - Help: help.md
