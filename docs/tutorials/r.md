@@ -36,10 +36,11 @@ Note: make sure to replace the email adress below.
 
 ```bash
 #!/bin/bash
-#SBATCH --job-name=cars		   # Job name
-#SBATCH --mail-type=END,FAIL          # Mail events (NONE, BEGIN, END, FAIL, ALL)
-#SBATCH --mail-user=fbsavi23@stlawu.edu     # Where to send mail
-#SBATCH --ntasks=1		   # Only 1 task
+#SBATCH --job-name=cars            # Job name
+## Remove extra '#' below to recieve emails
+##SBATCH --mail-type=END,FAIL       # Mail events (NONE, BEGIN, END, FAIL, ALL)
+##SBATCH --mail-user=username@stlawu.edu     # Where to send mail
+#SBATCH --ntasks=1                 # Only 1 task
 #SBATCH --cpus-per-task=1          # Requesting 1 CPU Core per task
 #SBATCH --mem=1G                   # Requesting 1GB of RAM
 #SBATCH --time=00:05:00            # Set a 5-minute limit
